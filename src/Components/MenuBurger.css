@@ -1,0 +1,8 @@
+.MenuBurger {
+  width: 15em;
+  height: 25em;
+  background-color: beige;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
