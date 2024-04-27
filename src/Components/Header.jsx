@@ -7,7 +7,7 @@ const {menu, setMenu} = Mycontext();
       <header className="header">
          <button className='menu' type='button' onClick={()=>setMenu(!menu)} >&#9776;</button>
          
-         <img src="../src/Pictures/back-in-to-90-s.jfif" className='Logo'/>
+         <img src="../src/Pictures/back-in-to-90-s.jpg" className='Logo'/>
 
       </header>
    </>) 
