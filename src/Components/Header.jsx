@@ -2,10 +2,12 @@ import './Header.css';
 import { Mycontext } from '../Context/Context';
 
 function Header(){
-const {Bdd} = Mycontext();
+const {menu, setMenu} = Mycontext();
    return (<>
       <header className="header">
+         <button className='menu' type='button' onClick={()=>setMenu(!menu)} >&#9776;</button>
          
+         <img src="../src/Pictures/back-in-to-90-s.jfif" className='Logo'/>
 
       </header>
    </>) 
