@@ -1,8 +1,21 @@
 .MenuBurger {
   width: 15em;
   height: 25em;
-  background-color: beige;
+  background-color: #fd2197;
   z-index: 1;
   position: absolute;
   top: 0;
+  animation-name: burger;
+  animation-duration: 1s;
+}
+
+@keyframes burger {
+  from {
+    width: 0em;
+    opacity: 0;
+  }
+  to {
+    width: 15em;
+    opacity: 1;
+  }
 }
