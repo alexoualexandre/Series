@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import Header from "./Components/Header.jsx";
 import { Retour } from "./Context/Context.jsx";
 import MenuBurger from "./Components/MenuBurger.jsx";
+import SectionSiFi from "./Components/SectionSiFi.jsx";
 
 function App() {
   const [initApi, setInitApi] = useState(0);
@@ -30,6 +31,7 @@ function App() {
           <Retour Bdd={Bdd} >
             <Header />
             <MenuBurger/>
+            <SectionSiFi />
 
             <Outlet />
           </Retour>
