@@ -1,34 +1,33 @@
 import { Mycontext } from "../Context/Context";
-import "./SectionArticle.css";
+import "./SectionFamille.css";
 import { Link } from "react-router-dom";
 
-function SectionSiFi() {
-  const { Bdd, articles } = Mycontext();
-  const cat = Bdd[articles];
+function SectionFamille() {
+  const { Bdd } = Mycontext();
+  const cat = Bdd[1];
   const series = cat.series;
   const max = series.slice(0, 4);
 
   return (
     <>
-      <h1 className="name_categorie">&nbsp;{cat.categorie} </h1>
-      <section className="SectionArticle">
+      <h1 className="name_categorie_famille">&nbsp;{cat.categorie} </h1>
+      <section className="SectionFamille">
         {max.map((article, index) => (
           <>
             <article key={index} className="Articles">
               <figure>
-                <figcaption className="fig_caption">{article.name}</figcaption>
+                <figcaption className="fig_caption_famille">{article.name}</figcaption>
                 <img
                   className="img_series"
                   src={`../src/Pictures_series/${article.img}`}
                 />
               </figure>
             </article>
-           
       
           </>
         ))}
             <Link
-          to={`/voirtout/${articles}`}
+          to={`/voirtout/1`}
           style={{
             color: "white",
             marginLeft: "15em",
@@ -38,10 +37,8 @@ function SectionSiFi() {
         >
           voir tout
         </Link>
-        
       </section>
-      
     </>
   );
 }
-export default SectionSiFi;
+export default SectionFamille;

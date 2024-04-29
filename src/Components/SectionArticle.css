@@ -11,10 +11,8 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  border: 1px solid green;
   position: relative;
-  top:8em;
-
+  border-bottom: 10px solid #fe2298;
 }
 
 .Articles {
@@ -55,5 +53,5 @@
   background-color: #fe2298;
   border-top-right-radius: 0.5em;
   color: #11111d;
-  
+margin-top: 5em;
 }
