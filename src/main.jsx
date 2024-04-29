@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-
-
+import SectionSiFi from './Components/SectionSiFi.jsx';
 
 const router = createBrowserRouter([
   {
@@ -13,8 +11,12 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/teste',
-        element: <> </>,
+        path: '/',
+        element: <SectionSiFi />,
+      },
+      {
+        path: '/voirtout',
+        element: <></>,
       },
     ],
   },
