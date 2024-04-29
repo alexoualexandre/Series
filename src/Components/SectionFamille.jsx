@@ -22,6 +22,7 @@ function SectionFamille() {
                   src={`../src/Pictures_series/${article.img}`}
                 />
               </figure>
+              {article.year}
             </article>
       
           </>

@@ -22,6 +22,7 @@ function SectionSiFi() {
                   src={`../src/Pictures_series/${article.img}`}
                 />
               </figure>
+              {article.year}
             </article>
            
       
