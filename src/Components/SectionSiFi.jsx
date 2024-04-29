@@ -23,10 +23,11 @@ function SectionSiFi() {
                 />
               </figure>
             </article>
+      
           </>
         ))}
-        <Link
-          to="/voirtout"
+            <Link
+          to={`/voirtout/${articles}`}
           style={{
             color: "white",
             marginLeft: "15em",
