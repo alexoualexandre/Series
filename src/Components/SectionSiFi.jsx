@@ -14,21 +14,23 @@ function SectionSiFi() {
       <section className="SectionArticle">
         {max.map((article, index) => (
           <>
-            <article key={index} className="Articles">
-              <figure>
-                <figcaption className="fig_caption">{article.name}</figcaption>
-                <img
-                  className="img_series"
-                  src={`../src/Pictures_series/${article.img}`}
-                />
-              </figure>
-              {article.year}
-            </article>
-           
-      
+            <Link to={`/Download/0/${article.name}`}>
+              <article key={index} className="Articles">
+                <figure>
+                  <figcaption className="fig_caption">
+                    {article.name}
+                  </figcaption>
+                  <img
+                    className="img_series"
+                    src={`../src/Pictures_series/${article.img}`}
+                  />
+                </figure>
+                {article.year}
+              </article>
+            </Link>
           </>
         ))}
-            <Link
+        <Link
           to={`/voirtout/${articles}`}
           style={{
             color: "white",
@@ -39,9 +41,7 @@ function SectionSiFi() {
         >
           voir tout
         </Link>
-        
       </section>
-      
     </>
   );
 }
