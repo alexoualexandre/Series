@@ -1,6 +1,6 @@
 .MenuBurger {
   width: 15em;
-  height: 25em;
+  height: 30em;
   background-color: #fd2197;
   z-index: 1;
   position: absolute;
@@ -18,4 +18,29 @@
     width: 15em;
     opacity: 1;
   }
+}
+
+.ul_burger {
+  width: 100%;
+  position: relative;
+  top: 4em;
+  text-align: center;
+ 
+}
+
+.croix {
+  width: 100%;
+}
+
+.button_croix {
+  width: 3em;
+  background-color: #fd2197;
+  border: #fd2197;
+  position: absolute;
+  right: 0;
+}
+
+.li_burger {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
