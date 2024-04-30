@@ -1,0 +1,30 @@
+.fig_caption_famille {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #fb6400;
+  color:black
+  
+}
+
+.SectionFamille {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .name_categorie_famille {
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    font-size: 1em;
+    padding-right: 1.5em;
+    display: inline-block;
+    background-color: #fb6400;
+    border-top-right-radius: 0.5em;
+    color: #11111d;
+  margin-top: 5em;
+  }
