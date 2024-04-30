@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SectionSiFi from "./Components/SectionSiFi.jsx";
 import Voirtout from "./Components/Voirtout.jsx";
 import SectionFamille from "./Components/SectionFamille.jsx";
+import Download from "./Components/Download.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,14 @@ const router = createBrowserRouter([
         element: (
           <>
             <Voirtout />
+          </>
+        ),
+      },
+      {
+        path: "/Download/:cat/:episode",
+        element: (
+          <>
+            <Download />
           </>
         ),
       },

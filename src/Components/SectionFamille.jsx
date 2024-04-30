@@ -14,20 +14,23 @@ function SectionFamille() {
       <section className="SectionFamille">
         {max.map((article, index) => (
           <>
-            <article key={index} className="Articles">
-              <figure>
-                <figcaption className="fig_caption_famille">{article.name}</figcaption>
-                <img
-                  className="img_series"
-                  src={`../src/Pictures_series/${article.img}`}
-                />
-              </figure>
-              {article.year}
-            </article>
-      
+            <Link to={`/Download/1/${article.name}`}>
+              <article key={index} className="Articles">
+                <figure>
+                  <figcaption className="fig_caption_famille">
+                    {article.name}
+                  </figcaption>
+                  <img
+                    className="img_series"
+                    src={`../src/Pictures_series/${article.img}`}
+                  />
+                </figure>
+                {article.year}
+              </article>
+            </Link>
           </>
         ))}
-            <Link
+        <Link
           to={`/voirtout/1`}
           style={{
             color: "white",
