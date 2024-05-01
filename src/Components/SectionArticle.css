@@ -16,7 +16,7 @@
 
 .Articles {
   width: 12em;
-  height: 13em;
+  height: 17em;
   background-color: black;
   margin-top: 1em;
   color: white;
@@ -53,4 +53,16 @@
   border-top-right-radius: 0.5em;
   color: #11111d;
 margin-top: 5em;
+}
+
+.button_favorie_on {
+  
+  background: none;
+  border: none;
+}
+
+.star {
+width: 1.5em;
+position: relative;
+left: 0;
 }

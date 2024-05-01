@@ -7,6 +7,7 @@ import SectionSiFi from "./Components/SectionSiFi.jsx";
 import Voirtout from "./Components/Voirtout.jsx";
 import SectionFamille from "./Components/SectionFamille.jsx";
 import Download from "./Components/Download.jsx";
+import Favorie from "./Components/Favorie.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,12 +39,20 @@ const router = createBrowserRouter([
           </>
         ),
       },
+      {
+        path: "/Favorie",
+        element: (
+          <>
+            <Favorie />
+          </>
+        ),
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  //<React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  //</React.StrictMode>
 );
