@@ -17,7 +17,7 @@ function App() {
         },
       })
       .then(function (response) {
-        console.log(response.data); // Les données au format JSON
+        // console.log(response.data); // Les données au format JSON
         setBdd(response.data);
         setInitApi(1);
       });
